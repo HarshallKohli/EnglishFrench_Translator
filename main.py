@@ -9,7 +9,7 @@ word_font = ("Ariel", 60, "bold")
 current_word = {}
 to_learn = {}
 
-# TODO : Creating New Flash Cards
+
 try:
     data1 = pandas.read_csv("flash-card-project-start/data/french_words.csv")
 except FileNotFoundError:
@@ -46,8 +46,6 @@ def is_known():
     data.to_csv("flash-card-project-start/data/words_to_learn.csv", index=False)
     next_card()
 # index=false as to not repeat indexing in csv file
-
-# TODO : CREATING THE USER INTERFACE
 
 
 window = Tk()
